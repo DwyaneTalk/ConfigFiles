@@ -19,13 +19,18 @@ set cursorline          "   突出显示当前行
 "set cursorcolumn        "   突出显示当前列
 set nu!                 "   显示行号
 "set backspace=2         "   设置backspace为删
+set laststatus=2
 set ruler
 set showcmd
 set autowrite
 set confirm
-set ts=4
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
-set autoindent
+set smartindent
+set shiftround
 
 set backupdir=~/.vim/backup,.
 if filereadable(expand("~/.vimrc.bundles"))
