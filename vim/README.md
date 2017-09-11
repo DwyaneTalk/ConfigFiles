@@ -40,3 +40,16 @@
 ## 粘贴
 
 ## 撤销和恢复
+
+# 插件管理
+
+## Vundle管理插件
+```
+    安装：  git clone https://github.com/gmarik/Vundle.vim.git  ~/.vim/bundle/Vundle.vim
+    配置：  建议新建.vimrc.bundles文件
+    其他：
+        安装插件：PluginInstall
+        卸载插件：PluginRemove
+        更新插件：PluginUpdate
+```
+
