@@ -32,6 +32,16 @@ set expandtab
 set smartindent
 set shiftround
 
+set foldenable              " 开始折叠
+set foldmethod=syntax       " 设置语法折叠
+set foldcolumn=0            " 设置折叠区域的宽度
+setlocal foldlevel=1        " 设置折叠层数为
+set foldlevelstart=99       " 打开文件是默认不折叠代码
+
+"set foldclose=all          " 设置为自动关闭折叠                
+"nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
+"                            " 用空格键来开关折叠
+
 set backupdir=~/.vim/backup,.
 if filereadable(expand("~/.vimrc.bundles"))
     source ~/.vimrc.bundles
