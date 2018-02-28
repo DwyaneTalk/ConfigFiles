@@ -15,3 +15,11 @@ vim +BundleInstall +qall
 
 cd $preDir
 pwd
+
+cd ~/.vim/bundle 
+git clone --recursive git://github.com/Valloric/YouCompleteMe
+cd ~/.vim/bundle/YouCompleteMe 
+./install.py 
+cp -f .vimrc-ycm ~/.vimrc 
+
+
