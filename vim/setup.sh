@@ -13,13 +13,9 @@ cp -f .vimrc* ~/
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +BundleInstall +qall
 
-cd $preDir
-pwd
-
-cd ~/.vim/bundle 
-git clone --recursive git://github.com/Valloric/YouCompleteMe
 cd ~/.vim/bundle/YouCompleteMe 
 ./install.py 
+cd $preDir
 cp -f .vimrc-ycm ~/.vimrc 
 
 
