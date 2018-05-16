@@ -3,9 +3,12 @@ if [ "`echo $0 | grep "setup.sh"`" != "" ];then
     exit
 fi
 #set alias
-cp alias.sh ~/.alias
+cp -f alias_conf.sh ~/.alias
 
-cp -f .bashrc ~/
-source ~/.bashrc
+#set tmux
+cp -f tmux_conf.sh ~/.tmux.conf
 
-echo "finish setup"
+cp -f bash_conf.sh ~/.bash_conf
+
+
+echo "add 'source ~/.bash_conf' to ~/.bashrc and source ~/.bashrc"

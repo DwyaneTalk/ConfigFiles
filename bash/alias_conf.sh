@@ -9,6 +9,8 @@ alias gita="git add"
 alias gitm="git commit -m"
 alias gitr="git rm -r"
 alias gitrc="git rm -r --cached"
+alias gitd="git diff"
 
 # bash
 alias cls="clear"
+
