@@ -5,14 +5,7 @@ fi
 #set alias
 cp alias.sh ~/.alias
 
-if [ "`cat ~/.bashrc | grep "source ~/.alias"`" == "" ];then
-echo \
-"
-if [ -f ~/.alias ]; then
-    source ~/.alias
-fi
-" >> ~/.bashrc
-fi
+cp -f .bashrc ~/
 source ~/.bashrc
 
 echo "finish setup"
