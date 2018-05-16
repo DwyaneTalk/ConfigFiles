@@ -7,3 +7,13 @@ parse_git_branch() {
      }
 
 export PS1="\u@\h\[\033[32m\]:\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+
+# If this is an xterm set the title to user@host
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;\u@\h\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
