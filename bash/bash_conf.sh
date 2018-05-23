@@ -17,3 +17,4 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+[[ -s /home/tlu/.autojump/etc/profile.d/autojump.sh ]] && source /home/tlu/.autojump/etc/profile.d/autojump.sh
